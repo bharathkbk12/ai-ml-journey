@@ -29,8 +29,3 @@ class Dataset:
     def validate(data: list, labels: list) -> bool:
         return len(data) == len(labels) and len(data) > 0
 
-
-ds = Dataset([1, 2, 3], [0, 1, 0])
-print(len(ds))       # 3
-print(ds[0])         # (1, 0)
-print(ds.shape)      # (3,)
