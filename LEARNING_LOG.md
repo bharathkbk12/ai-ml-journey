@@ -42,3 +42,30 @@ This week changed my perspective on machine learning because it showed me that a
 - Matplotlib advanced plots
 - Feature engineering
 - Scikit-learn basics and model evaluation
+
+
+## Week 3 Reflection
+
+### What I learned
+- fit/predict/transform is the universal ML pattern in scikit-learn workflows
+- Feature engineering often matters more than model choice, especially for tabular data like Titanic
+- A Pipeline is essential because it prevents data leakage and keeps preprocessing and modeling consistent
+- Accuracy alone is not enough; precision, recall, F1, and ROC-AUC provide a more honest view of model quality
+- Cross-validation gives a more reliable estimate of performance than a single train/test split
+- Cleaning missing data and encoding categorical variables correctly is a major part of the ML pipeline
+
+### What was hard
+- Understanding the difference between leakage and valid preprocessing during model training
+- Making sure the feature engineering and encoding matched the model’s expected inputs
+- Interpreting metrics beyond accuracy and realizing that class balance affects model evaluation
+- Debugging warnings and shape mismatches when building a pipeline with a scaler and classifier
+
+### Best result
+- Titanic model: 0.788 test accuracy, 0.725 F1-score, 0.831 ROC-AUC
+- Cross-validation mean accuracy: 0.795
+- Training accuracy: 0.983, showing the model learned well without overfitting too severely
+
+### Week 4 preview
+- Andrew Ng ML Specialization (supervised learning deep dive)
+- Project 1: Customer Churn Predictor (real Kaggle dataset)
+- XGBoost + more advanced feature engineering
